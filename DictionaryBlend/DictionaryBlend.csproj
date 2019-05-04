@@ -262,7 +262,8 @@
   <PropertyGroup>
     <PostBuildEvent>SET var=%25cd%25
 ECHO %25var%25
-..\..\..\tools\ILMerge\ILMerge.exe /log:out/log.txt /target:win /out:out/$(TargetFileName) $(TargetPath)  $(TargetDir)Common.dll $(TargetDir)Common.Sound.dll $(TargetDir)Interop.WMPLib.dll
+ECHO $(TargetDir)
+rem ..\..\..\tools\ILMerge\ILMerge.exe /log:out/log.txt /target:win /out:out/$(TargetFileName) $(TargetPath)  $(TargetDir)Common.dll $(TargetDir)Common.Sound.dll $(TargetDir)Interop.WMPLib.dll
 </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
