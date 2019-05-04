@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09894002-71F7-4B24-854D-709502FA9CC1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>f</RootNamespace>
+    <AssemblyName>Easy4Learn</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Easy-Lang.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;PRO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'out|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\out\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\AxInterop.WMPLib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CefSharp">
+      <HintPath>lib\CefSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.WinForms">
+      <HintPath>lib\CefSharp.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Library\Interop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="libhbrd, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\libhbrd.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="feed\TED\ClassDiagramForTed.cd" />
+    <None Include="lib\locales\am.pak" />
+    <None Include="lib\locales\ar.pak" />
+    <None Include="lib\locales\bg.pak" />
+    <None Include="lib\locales\bn.pak" />
+    <None Include="lib\locales\ca.pak" />
+    <None Include="lib\locales\cs.pak" />
+    <None Include="lib\locales\da.pak" />
+    <None Include="lib\locales\de.pak" />
+    <None Include="lib\locales\el.pak" />
+    <None Include="lib\locales\en-GB.pak" />
+    <None Include="lib\locales\en-US.pak" />
+    <None Include="lib\locales\es-419.pak" />
+    <None Include="lib\locales\es.pak" />
+    <None Include="lib\locales\et.pak" />
+    <None Include="lib\locales\fa.pak" />
+    <None Include="lib\locales\fi.pak" />
+    <None Include="lib\locales\fil.pak" />
+    <None Include="lib\locales\fr.pak" />
+    <None Include="lib\locales\gu.pak" />
+    <None Include="lib\locales\he.pak" />
+    <None Include="lib\locales\hi.pak" />
+    <None Include="lib\locales\hr.pak" />
+    <None Include="lib\locales\hu.pak" />
+    <None Include="lib\locales\id.pak" />
+    <None Include="lib\locales\it.pak" />
+    <None Include="lib\locales\ja.pak" />
+    <None Include="lib\locales\kn.pak" />
+    <None Include="lib\locales\ko.pak" />
+    <None Include="lib\locales\lt.pak" />
+    <None Include="lib\locales\lv.pak" />
+    <None Include="lib\locales\ml.pak" />
+    <None Include="lib\locales\mr.pak" />
+    <None Include="lib\locales\ms.pak" />
+    <None Include="lib\locales\nb.pak" />
+    <None Include="lib\locales\nl.pak" />
+    <None Include="lib\locales\pl.pak" />
+    <None Include="lib\locales\pt-BR.pak" />
+    <None Include="lib\locales\pt-PT.pak" />
+    <None Include="lib\locales\ro.pak" />
+    <None Include="lib\locales\ru.pak" />
+    <None Include="lib\locales\sk.pak" />
+    <None Include="lib\locales\sl.pak" />
+    <None Include="lib\locales\sr.pak" />
+    <None Include="lib\locales\sv.pak" />
+    <None Include="lib\locales\sw.pak" />
+    <None Include="lib\locales\ta.pak" />
+    <None Include="lib\locales\te.pak" />
+    <None Include="lib\locales\th.pak" />
+    <None Include="lib\locales\tr.pak" />
+    <None Include="lib\locales\uk.pak" />
+    <None Include="lib\locales\vi.pak" />
+    <None Include="lib\locales\zh-CN.pak" />
+    <None Include="lib\locales\zh-TW.pak" />
+    <None Include="_app.config" />
+    <None Include="bin\Debug\dictionaries\WordNet\datai.tz" />
+    <Compile Include="button images.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>button images.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Buttons.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buttons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProcessorForTranslate.cs" />
+    <Compile Include="Reader\TextWithTranslate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reader\TextWithTranslate.Designer.cs">
+      <DependentUpon>TextWithTranslate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TipHelper.cs" />
+    <Compile Include="Controls\TipTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\IActionWithText.cs" />
+    <Compile Include="Controls\MenuForSelected.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuForSelected.Designer.cs">
+      <DependentUpon>MenuForSelected.cs</DependentUpon>
+    </Compile>
+    <None Include="Sentence\Diapason.cs" />
+    <Compile Include="feed\amara\AmaraBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="feed\amara\AmaraBrowser.Designer.cs">
+      <DependentUpon>AmaraBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feed\BrowserForSownloadUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="feed\BrowserForSownloadUC.Designer.cs">
+      <DependentUpon>BrowserForSownloadUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feed\euronews\EuronewsArchiveView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="feed\euronews\EuronewsArchiveView.Designer.cs">
+      <DependentUpon>EuronewsArchiveView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feed\euronews\EuronewsProgramsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="feed\euronews\EuronewsProgramsView.Designer.cs">
+      <DependentUpon>EuronewsProgramsView.cs</DependentUpon>
+    </Compile>
+    <None Include="feed\euronews\RequestHandlerEuronews.cs">
+      <SubType>UserControl</SubType>
+    </None>
+    <Compile Include="feed\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feed\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feed\IFeed.cs" />
+    <Compile Include="feed\JsonExtensions.cs" />
+    <Compile Include="feed\euronews\EuronewsBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="feed\euronews\EuronewsBrowser.Designer.cs">
+      <DependentUpon>EuronewsBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feed\euronews\EuronewsProvider.cs" />
+    <Compile Include="feed\euronews\EuronewsProviderLoad.cs" />
+    <Compile Include="feed\euronews\EuronewsProviderArchive.cs" />
+    <Compile Include="feed\HistoryListUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="feed\HistoryListUC.Designer.cs">
+      <DependentUpon>HistoryListUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feed\crossdata\News.cs" />
+    <Compile Include="feed\TED\UCTedTopics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="feed\TED\UCTedTopics.Designer.cs">
+      <DependentUpon>UCTedTopics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feed\crossdata\VideoUnit.cs" />
+    <Compile Include="feed\WebParser.cs" />
+    <Compile Include="feed\YouTube\YouTubeBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="feed\YouTube\YouTubeBrowser.Designer.cs">
+      <DependentUpon>YouTubeBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="key\MainMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="key\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\CreateAndReadControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Misc\CreateAndReadControl.Designer.cs">
+      <DependentUpon>CreateAndReadControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\FilesController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Misc\FilesController.Designer.cs">
+      <DependentUpon>FilesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\FilesControllerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc\FilesControllerForm.Designer.cs">
+      <DependentUpon>FilesControllerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="key\IActionHost.cs" />
+    <Compile Include="key\KeyHandlerPlayer.cs" />
+    <Compile Include="Reader\SearchWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reader\SearchWindow.Designer.cs">
+      <DependentUpon>SearchWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feed\TED\TEDTags.cs" />
+    <Compile Include="Video\SentennceShiftForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Video\SentennceShiftForm.Designer.cs">
+      <DependentUpon>SentennceShiftForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Video\VideoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Video\VideoControl.Designer.cs">
+      <DependentUpon>VideoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Video\VideoRateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Video\VideoRateForm.Designer.cs">
+      <DependentUpon>VideoRateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Video\OpenURLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Video\OpenURLForm.Designer.cs">
+      <DependentUpon>OpenURLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sentence\Sentence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sentence\SentenceForLesson.cs" />
+    <Compile Include="Video\SentenceListWithVideo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Video\SentenceListWithVideo.Designer.cs">
+      <DependentUpon>SentenceListWithVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sentence\SentenceForTutor.cs" />
+    <Compile Include="Sentence\SentenceVideo.cs" />
+    <Compile Include="Video\SystemMenu.cs" />
+    <Compile Include="Video\VideoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Video\VideoForm.Designer.cs">
+      <DependentUpon>VideoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherImages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtherImages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reader\Reader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reader\Reader.Designer.cs">
+      <DependentUpon>Reader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feed\FileSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feed\FileSelector.Designer.cs">
+      <DependentUpon>FileSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feed\TED\DowloadedInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feed\TED\DowloadedInfo.Designer.cs">
+      <DependentUpon>DowloadedInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feed\TED\ProgressBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="feed\TED\SubtitleCreator.cs" />
+    <Compile Include="feed\TED\TedBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="feed\TED\TedBrowser.Designer.cs">
+      <DependentUpon>TedBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feed\TED\TEDProvider.cs" />
+    <Compile Include="feed\TED\TEDSubtitleProvider.cs" />
+    <Compile Include="Tools\SearchSubtitles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\SearchSubtitles.Designer.cs">
+      <DependentUpon>SearchSubtitles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\WordHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\WordHistory.Designer.cs">
+      <DependentUpon>WordHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\EstimatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\EstimatorForm.Designer.cs">
+      <DependentUpon>EstimatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\RunForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\RunForm.Designer.cs">
+      <DependentUpon>RunForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\FindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\FindForm.Designer.cs">
+      <DependentUpon>FindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Reader\TextWithTranslate.resx">
+      <DependentUpon>TextWithTranslate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TipTextBox.resx">
+      <DependentUpon>TipTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feed\BrowserForSownloadUC.resx">
+      <DependentUpon>BrowserForSownloadUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feed\euronews\EuronewsArchiveView.resx">
+      <DependentUpon>EuronewsArchiveView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feed\euronews\EuronewsBrowser.resx">
+      <DependentUpon>EuronewsBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feed\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feed\HistoryListUC.resx">
+      <DependentUpon>HistoryListUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feed\TED\UCTedTopics.resx">
+      <DependentUpon>UCTedTopics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="key\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\FilesController.resx">
+      <DependentUpon>FilesController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\FilesControllerForm.resx">
+      <DependentUpon>FilesControllerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video\SentennceShiftForm.resx">
+      <DependentUpon>SentennceShiftForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video\VideoControl.resx">
+      <DependentUpon>VideoControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video\VideoRateForm.resx">
+      <DependentUpon>VideoRateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video\OpenURLForm.resx">
+      <DependentUpon>OpenURLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reader\Reader.resx">
+      <DependentUpon>Reader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\EstimatorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EstimatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\RunForm.resx">
+      <DependentUpon>RunForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FindForm.resx">
+      <DependentUpon>FindForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reader\FullReader.resx">
+      <DependentUpon>FullReader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reader\SentenceList.resx">
+      <DependentUpon>SentenceList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reader\TwinList.resx">
+      <DependentUpon>TwinList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reader\TwinText.resx">
+      <DependentUpon>TwinText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\SplashForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reader\FullReader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reader\FullReader.Designer.cs">
+      <DependentUpon>FullReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reader\SentenceList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reader\SentenceList.Designer.cs">
+      <DependentUpon>SentenceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reader\SentenceListWithIndent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reader\SentenceListWithIndent.Designer.cs">
+      <DependentUpon>SentenceListWithIndent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sentence\SentenceParser.cs" />
+    <Compile Include="Reader\TwinList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reader\TwinList.Designer.cs">
+      <DependentUpon>TwinList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reader\TwinText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reader\TwinText.Designer.cs">
+      <DependentUpon>TwinText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reader\IdiomService.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Misc\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\html\assets\cur\resize.gif" />
+    <Content Include="bin\Debug\html\assets\img\tutor.png" />
+    <Content Include="bin\Debug\Sample\Episode\Subtitle.RU.txt" />
+    <Content Include="bin\Debug\Sample\Episode\Subtitle.EN.txt" />
+    <Content Include="bin\Debug\Sample\Episode\Video.mp4" />
+    <Content Include="Easy-Lang.ico" />
+    <None Include="Resources\MainIco.png" />
+    <None Include="Resources\MainIco16.png" />
+    <None Include="Resources\MainIco1.png" />
+    <None Include="res\Buttons\16px-Green_cross.png" />
+    <EmbeddedResource Include="html\js\d3.v3.min.js" />
+    <EmbeddedResource Include="html\js\scroller.js" />
+    <EmbeddedResource Include="html\css\css.css" />
+    <EmbeddedResource Include="html\scroller.html" />
+    <EmbeddedResource Include="html\js\jquery-1.11.0.min.js" />
+    <EmbeddedResource Include="html\4win\ted_parse.js" />
+    <EmbeddedResource Include="html\4win\ted_topics.js" />
+    <EmbeddedResource Include="html\4win\euronews_subtitles_parse.js" />
+    <EmbeddedResource Include="html\4win\euronews_type_parse.js" />
+    <EmbeddedResource Include="html\history_list_uc.html" />
+    <EmbeddedResource Include="html\css\selector-list-euronews-archive.css" />
+    <EmbeddedResource Include="html\css\selector-list.css" />
+    <EmbeddedResource Include="html\js\selector-list.js" />
+    <Content Include="lib\CefSharp.dll" />
+    <Content Include="lib\CefSharp.WinForms.dll" />
+    <Content Include="lib\icudt.dll" />
+    <Content Include="lib\libcef.dll" />
+    <Content Include="lib\libEGL.dll" />
+    <Content Include="lib\libGLESv2.dll" />
+    <Content Include="lib\libhbrd.dll" />
+    <Content Include="res\Buttons\DictionaryBlend.png" />
+    <Content Include="res\Buttons\estimate.png" />
+    <None Include="res\Buttons\green16.png" />
+    <None Include="res\Buttons\filter.png" />
+    <Content Include="res\Buttons\GreenYellowDotSmall.png" />
+    <None Include="res\Buttons\green_arrow_next.png" />
+    <None Include="res\Buttons\green_arrow_next_32.png" />
+    <None Include="res\Buttons\green_arrow_next_48.png" />
+    <None Include="res\Buttons\home.png" />
+    <Content Include="res\Buttons\Next.png" />
+    <None Include="bin\Debug\Sample\Episode\Subtitle.EN.txt.lesson" />
+    <None Include="res\Buttons\NextSent.png" />
+    <Content Include="res\Buttons\Options.png" />
+    <None Include="res\Buttons\Other\green.png" />
+    <None Include="res\Buttons\pause.mode.png" />
+    <Content Include="res\Buttons\Prev.png" />
+    <None Include="res\Buttons\PrevSent.png" />
+    <Content Include="res\Buttons\Repeat.png" />
+    <None Include="res\Copy of Buttons\Close.png" />
+    <None Include="res\Buttons\start_16.png" />
+    <None Include="res\Buttons\turtle.png" />
+    <None Include="res\Buttons\turtle-side-view.png" />
+    <None Include="res\Buttons\shift.png" />
+    <None Include="res\Buttons\snail_big.png" />
+    <None Include="res\Buttons\snail_big2.png" />
+    <None Include="res\Buttons\snail_big3.png" />
+    <Content Include="res\Buttons\YellowDotSmall.png" />
+    <Content Include="res\Copy of Buttons\GreenDotSmall.png" />
+    <Content Include="res\Copy of Buttons\Next.png" />
+    <Content Include="res\Copy of Buttons\Options.png" />
+    <Content Include="res\Copy of Buttons\Prev.png" />
+    <Content Include="res\Copy of Buttons\Repeat.png" />
+    <None Include="res\Img\ProVersionLabel.png" />
+    <None Include="res\Img\download.png" />
+    <Content Include="res\logo\-Demo.png" />
+    <Content Include="res\logo\-Extended.png" />
+    <Content Include="res\logo\-initial.png" />
+    <Content Include="res\logo\SplashMovieSubtitler8bit.png" />
+    <Content Include="res\MovieSubtitler.ico" />
+    <None Include="Resources\zoom_out.ico" />
+    <None Include="Resources\zoom_in.ico" />
+    <None Include="Resources\WordHunter.ico" />
+    <None Include="res\icon_wait.gif" />
+    <None Include="Resources\btOpen.Image.png" />
+    <None Include="res\Buttons\Close.png" />
+    <Content Include="res\Buttons\GreenDotSmall.png" />
+    <Content Include="res\ico\1FreeDictionary.ico" />
+    <None Include="Reader\zClassDiagram.cd" />
+    <None Include="res\ico\copy.ico" />
+    <None Include="Resources\book_open_.ico" />
+    <None Include="res\ico\find citation.JPG" />
+    <None Include="res\ico\find citations.jpg" />
+    <None Include="res\ico\branch_view.JPG" />
+    <None Include="res\ico\find.png" />
+    <None Include="res\ico\Dictionary.png" />
+    <None Include="res\ico\chart.png" />
+    <None Include="res\ico\Email.png" />
+    <None Include="res\ico\speaker-icon.gif" />
+    <None Include="res\ico\speaker.jpg" />
+    <None Include="res\ico\speaker_icon2.jpg" />
+    <None Include="res\ico\test.png" />
+    <None Include="res\ico\speaker.png" />
+    <None Include="res\ico\One.jpg" />
+    <None Include="res\ico\paste.png" />
+    <Content Include="res\ico\One.png" />
+    <Content Include="res\ico\Options.png" />
+    <Content Include="res\ico\text_tree_black.ico" />
+    <None Include="res\Img\email.png" />
+    <None Include="res\Img\close.png" />
+    <None Include="res\Img\closeNode16.png" />
+    <None Include="res\Img\AddToVocabulary.png" />
+    <None Include="res\ico\WordsCatalog.png" />
+    <None Include="res\ico\two.jpg" />
+    <Content Include="res\ico\two.png" />
+    <Content Include="res\Img\CheckBox.png" />
+    <Content Include="res\Img\google.png" />
+    <Content Include="res\Img\loudspeaker.jpg" />
+    <None Include="res\Img\playWord16.png" />
+    <None Include="Resources\cutToolStripMenuItem.Image.png" />
+    <Content Include="res\Img\ms_translator_logo_big.gif" />
+    <Content Include="res\Img\new.gif" />
+    <Content Include="res\Img\NewBeta.png" />
+    <Content Include="res\Img\Repeat.png" />
+    <Content Include="res\Img\starred.png" />
+    <Content Include="res\Img\unstarred.gif" />
+    <Content Include="res\Img\Yahoo.png" />
+    <EmbeddedResource Include="button images.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>button images.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buttons.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Buttons.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuForSelected.resx">
+      <DependentUpon>MenuForSelected.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\CreateAndReadControl.resx">
+      <DependentUpon>CreateAndReadControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reader\SearchWindow.resx">
+      <DependentUpon>SearchWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video\SentenceListWithVideo.resx">
+      <DependentUpon>SentenceListWithVideo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video\VideoForm.resx">
+      <DependentUpon>VideoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherImages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>OtherImages.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feed\FileSelector.resx">
+      <DependentUpon>FileSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feed\TED\DowloadedInfo.resx">
+      <DependentUpon>DowloadedInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feed\TED\TedBrowser.resx">
+      <DependentUpon>TedBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\SearchSubtitles.resx">
+      <DependentUpon>SearchSubtitles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\WordHistory.resx">
+      <DependentUpon>WordHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Resources\LibraryBlack.ico" />
+    <Content Include="Resources\logo.jpg" />
+    <Content Include="res\wait.gif" />
+    <None Include="Resources\pasteToolStripMenuItem.Image.png" />
+    <None Include="Resources\logo_.jpg" />
+    <None Include="Resources\logo2.jpg" />
+    <None Include="Resources\logo_end.jpg" />
+    <None Include="fm.pfx" />
+    <None Include="Resources\EstimatorForm.ico" />
+    <None Include="res\logo\Logo.pdn" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common.Sound\Common.Sound.csproj">
+      <Project>{4F9116BE-2A65-46C9-BDDE-4CA77AA15958}</Project>
+      <Name>Common.Sound</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{717118F9-6D3F-4C61-A516-2FD349726435}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DictionaryBlend\DictionaryBlend.csproj">
+      <Project>{7E0AC426-8541-4CEE-9620-938ADCEBD2CE}</Project>
+      <Name>DictionaryBlend</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\Library\" />
+    <Folder Include="fool\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

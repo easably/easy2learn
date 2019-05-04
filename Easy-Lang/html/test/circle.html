@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <!--http://apike.ca/prog_svg_jsanim.html-->
+
+        <script type="text/ecmascript">
+            window.globalVar2 = 'globalVar from parent';
+        </script>
+
+    <object>
+        <embed src="circle.svg" width="150" height="200" type="image/svg+xml" />
+    </object>
+    <script type="text/ecmascript">
+
+        var newdiv = document.createElement("DIV");
+        newdiv.appendChild(document.createTextNode("some text"));
+        document.body.appendChild(newdiv);
+
+        console.log(window.globalVar);
+        console.log('call from parent   - ' + window.globalVar2);
+
+    </script>
+</body>
+</html>

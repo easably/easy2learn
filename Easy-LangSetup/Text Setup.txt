@@ -1,0 +1,5 @@
+Welcome to MovieSubtitler 
+Setup Wizard
+
+The Setup Wizard will install MovieSubtitler on your computer.
+Click Next to continue or Cancel to exit the Setup Wizard.

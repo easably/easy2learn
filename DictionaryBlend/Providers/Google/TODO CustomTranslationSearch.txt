@@ -1,0 +1,40 @@
+http://translate.google.com/toolkit/gettm
+
+
+entity	00001otndccsdmo
+esm	true
+hl	en
+mofmt	false
+security_token	AKrFfvIEjIbGcYBjuELVb-iUTz8SO_5xQg:1285153424972
+sl	en
+src	cost-effective
+thld	0
+tl	ru
+
+Source
+hl=en&src=cost-effective&sl=en&tl=ru&entity=00001otndccsdmo&thld=0&esm=true&mofmt=false&security_token=AKrFfvIEjIbGcYBjuELVb-iUTz8SO_5xQg%3A1285153424972
+
+============ headers
+
+Host	translate.google.com
+User-Agent	Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10 GTB7.1 ( .NET CLR 3.5.30729; .NET4.0E) GTBA
+Accept	text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language	en-us,en;q=0.5
+Accept-Encoding	gzip,deflate
+Accept-Charset	ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive	115
+Connection	keep-alive
+X-Requested-With	XMLHttpRequest
+Content-Type	application/x-www-form-urlencoded;charset=utf-8
+Referer	http://translate.google.com/toolkit/workbench?did=00001otndccsdmo&hl=en
+Content-Length	153
+Cookie	PREF=ID=e0d94a24a2fa9cc4:U=1c449fa392bc9632:TB=2:LD=en:CR=2:TM=1267174677:LM=1284014363:DV=sTIUytipGDoC:GM=1:S=MfGrcpca4SkSoZIJ; NID=39=SDey8EUO4X1cmXQlnFAtpIo9fykCUwL7OOOm02NE6MwFD4UZmuGWx3ywRejZhvx2Nu_fKmqsEsdpLpv7nq5xEAIP4v1W1IKcWgl_vw4_yLA05TKxKS9FZbr-ADUMgZSl; rememberme=true; SID=DQAAAJMAAADDSHHXG9lCBPfHo4xHpgTrlLc8essgs-G2pOgpNv5idqvazszIFQJfiDpp407aX0ca4mCVowvyz2w9GCxnSzA1ZMSbf1tEgfCXks83sIsSq2KXmbkvgzbJYSgz5pu33XqOOfJg9FbmBqy4NvVc2ISmbmdGznlor-THZ1ChTCNP60bqimXIasFtILYzVI8MfU-LtA6v1ZPBJ09XH-9WStqt; HSID=Agx7OTnhnsduTNVpY; __utma=195145449.1446286023.1285153190.1285153190.1285153190.1; __utmb=195145449.1.10.1285153190; __utmc=195145449; __utmz=195145449.1285153190.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+Pragma	no-cache
+Cache-Control	no-cache
+
+
+=================== JSOIN for cost-effective
+
+while (1);{"result":[{"source":"High-quality and cost effective service","translations":[{"id":"p_0:3631429738676981551:en:ru;translation:1:400a13316bc37885:0000007fa0176821:0:^:;00048c60adb33a00","translation":"Качественное и экономически эффективные услуги","tmid":"p_0"}],"score":"50"},{"source":"World leader in cost-effective earth stabilization solutions","translations":[{"id":"p_c81ccbb347d02f5a:4831049664798514028:en-US:ru-RU;translation:0:430b5612fa95db6c:011000b600000000:0:^:;00048f1062cfe835","translation":"Мировой лидер в предоставлении экономически эффективных решений по укреплению грунта","tmid":"p_c81ccbb347d02f5a"}],"score":"40"},{"source":"To create a stable cost-effective structure that would","translations":[{"id":"p_c81ccbb347d02f5a:17144959780953581346:en-US:ru-RU;translation:0:edef22153818e722:011000b600000000:0:^:;00048f1062bb9ae0","translation":"Создание прочной и экономически выгодной конструкции, которая смогла бы","tmid":"p_c81ccbb347d02f5a"}],"score":"36"},{"source":"Perioperative b-blockade is also cost-effective in these patients.","translations":[{"id":"p_0:12299521220227978209:en:ru;translation:1:0327330bdd01c39a:000000e55146c1cb:0:^:;00048240ab10d5f9","translation":"Периоперационная B-блокада является также экономически эффективной у этих больных.","tmid":"p_0"}],"score":"33"},{"source":"Bearing capacity in a highly cost-effective manner. &lt;br spacebefore=&quot;0&quot;/&gt;&lt;/cf&gt;","translations":[{"id":"p_c81ccbb347d02f5a:11746661552245681306:en-US:ru-RU;translation:0:a3048671fe57ac9a:011000b600000000:0:^:;00048f1062bb979e","translation":"несущую способность грунта экономически эффективным способом. &lt;br spacebefore=&quot;0&quot;/&gt;&lt;/cf&gt;","tmid":"p_c81ccbb347d02f5a"}],"score":"29"}],"status":"OK"}
+ 
+	

@@ -1,0 +1,10 @@
+﻿http://stackoverflow.com/questions/4219526/html-render-with-inspect-element-functionality-how-to-c
+
+private static String GetTagNameByClick(WebBrowser refWebBrowser, Int32 valScreenX, Int32 valScreenY)
+    {
+        Point refPoint = refWebBrowser.PointToClient(new Point(valScreenX, valScreenY));
+
+        HtmlElement refHtmlElement = refWebBrowser.Document.GetElementFromPoint(refPoint);
+
+        return refHtmlElement.TagName;
+    }

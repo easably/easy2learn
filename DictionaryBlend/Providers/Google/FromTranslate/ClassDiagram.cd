@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="f.GoogleTranslateForIdiom">
+    <Position X="12.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Providers\Google\FromTranslate\GoogleTranslateForIdiom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="f.GoogleDefinitionBase">
+    <Position X="3.5" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQABAAAAAAAAQgAAAAAAACAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Providers\Google\fromDEF\GoogleDefinitionBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="f.GoogleDictionary">
+    <Position X="12.5" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABEAAAAAAAAAAAABAAAAAQAAAAAQAAAA=</HashCode>
+      <FileName>Providers\Google\FromTranslate\GoogleDictionary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="f.GoogleDictionary_Depricated" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACBCAAEAEAAAAAAAAAAACAAAAAAAAAAAAYAAAA=</HashCode>
+      <FileName>Providers\Google\GoogleDictionary_Depricated.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="f.GoogleMonoDictionary">
+    <Position X="3.25" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACACAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Providers\Google\fromDEF\GoogleMonoDictionary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="f.GoogleSynonymsDictionary">
+    <Position X="0.5" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACACAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Providers\Google\fromDEF\GoogleSynonymsDictionary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="f.GoogleTipDictionary">
+    <Position X="6.75" Y="2" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="f.GoogleTipDictionary.TipArticle">
+        <Compartments>
+          <Compartment Name="Fields" Collapsed="true" />
+        </Compartments>
+        <TypeIdentifier>
+          <NewMemberFileName>Providers\Google\FromTranslate\GoogleTipDictionary.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAgAAAAAABAAAAAQAAAAAAACAA=</HashCode>
+      <FileName>Providers\Google\FromTranslate\GoogleTipDictionary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="f.GoogleTranslate">
+    <Position X="12.5" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQCAAAAAAAAA=</HashCode>
+      <FileName>Providers\Google\FromTranslate\GoogleTranslate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="f.GoogleTranslateBase">
+    <Position X="9.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQIACDCEQEAEYAAAQgAAABACAAAAgAACAgAACBAAA=</HashCode>
+      <FileName>Providers\Google\FromTranslate\GoogleTranslateBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="f.GoogleWebDefinition">
+    <Position X="0.5" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACACAIABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Providers\Google\fromDEF\GoogleWebDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="f.DictionaryProvider" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RCANISGBCAIMhEQEEAEAAEAJDCQIAQIARSAABALAJiI=</HashCode>
+      <FileName>Providers\DictionaryProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

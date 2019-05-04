@@ -1,0 +1,54 @@
+﻿.vdItem {
+    cursor: pointer;
+    border-bottom: 1px solid #808285;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+    .vdItem:hover {
+        color: green;
+        border-bottom: 1px solid green;
+    }
+
+        .vdItem:hover > .lesson {
+            color: #000;
+        }
+
+    .vdItem > img {
+        width: 170px;
+        float: left;
+    }
+
+h3 {
+    margin-left: 180px;
+}
+
+.lesson {
+    border: 1px solid #D38D5B;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    width: 130px;
+    float: right;
+}
+
+    .lesson:hover .icon {
+        opacity: 1;
+    }
+
+    .lesson:hover h4 {
+        color: #D38D5B;
+        opacity: 1;
+    }
+
+    .lesson h4 {
+        padding-top: 8px;
+        margin: 0px;
+    }
+
+.icon {
+    float: left;
+    padding: 7px;
+    opacity: 0.7;
+    width: 17px;
+}

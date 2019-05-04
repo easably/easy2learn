@@ -1,0 +1,426 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+* {	/*--make all to 0 as default--*/
+	padding: 0;
+	margin: 0;
+	outline:none;
+	
+	-webkit-text-size-adjust: none !important;
+}
+
+::selection {
+	background: #333; /* Safari */
+	color:#fff;
+	}
+	
+::-moz-selection {
+	background: #333; /* Firefox */
+	color:#fff;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'futura_bold';
+    src: url('../fonts/futura_bold-webfont.eot');
+    src: url('../fonts/futura_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/futura_bold-webfont.woff') format('woff'),
+         url('../fonts/futura_bold-webfont.ttf') format('truetype'),
+         url('../fonts/futura_bold-webfont.svg#futura-boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'futura_book';
+	src: url('../fonts/FuturaStd-Book.eot');
+	src: local('☺'), 
+	url('../fonts/FuturaStd-Book.woff') format('woff'), 
+	url('/../fonts/FuturaStd-Book.ttf') format('truetype'), 
+	url('../fonts/FuturaStd-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Global Styles */
+
+body {
+      background:#2e303d;
+      margin:0px;
+      font-family: 'futura_bold';
+	  font-size:1em;
+	  border:10px;
+	  background-image:url(http://euronews.com/images/general/repeat_background.svg)
+}
+
+h1 {
+	font-family: 'futura_bold';
+	font-size:1.9em;
+	color:#00b698;
+	letter-spacing:0em;
+	font-weight: 100;
+}
+
+h2 {
+	font-family: 'futura_book';
+	font-size:1.2em;
+	color:#00b698;
+	letter-spacing:0em;
+	font-weight: 100;
+}
+
+h3 {
+	font-family: 'futura_book';
+	font-size:1.1em;
+	color:#00b698;
+	letter-spacing:0em;
+	font-weight: 100;
+	opacity:1;
+}
+
+a {
+	font-family: 'futura_book';
+	font-size:1em;
+	text-decoration:none;
+	color:#00b698;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+p {
+	font-family: 'futura_book';
+	font-size:1em;
+	text-decoration:none;
+	color:#1a1a1a;
+	max-width:300px;
+}
+
+.icon_navigation {
+	top:85%;
+	left:50%;
+	margin-left:-42.5px;
+	position:fixed;
+	z-index:-1;
+}
+
+#left_arrow {
+	width:40px;
+	height:40px;
+    display:block;
+}
+
+#right_arrow {
+	width:40px;
+	height:40px;
+    display:block;
+}
+
+/* Header */
+
+#header {
+	background-color:none;
+	margin:auto;
+	top:0px;
+	position:relative;
+	text-align:center;
+}
+
+.logo_large {
+	font-size: 2em;
+	font-family: 'futura_bold';
+	letter-spacing:0em;
+	color: #00b698;
+	top:30px;
+	width: 100%;
+    margin: 0 auto;
+    display:block;
+    position:fixed;
+}
+
+.logo_medium {
+	font-size: 2em;
+	font-family: 'futura_bold';
+	letter-spacing:0em;
+	color: #00b698;
+	top:30px;
+	width: 100%;
+    margin: 0 auto;
+    display:none;
+    position:fixed; 
+}
+
+.logo_small {
+	font-size: 1.3em;
+	font-family: 'futura_bold';
+	letter-spacing:0em;
+	color: #00b698;
+	top:30px;
+	width: 100%;
+    margin: 0 auto;
+    display:none;
+    position:fixed;    
+}
+
+
+.info_small {
+	font-size: 1.5em;
+	font-family: 'futura_book';
+	float:right;
+	width:40px;
+	height:40px;
+	position:fixed;
+	right:30px;
+	top:30px;
+	color:#fff;
+	background-color:#00b698;
+}
+
+.twitter {
+	font-size: 1.5em;
+	font-family: 'futura_book';
+	float:right;
+	width:40px;
+	height:40px;
+	position:fixed;
+	right:30px;
+	top:80px;
+	color:#fff;
+	background-color:#00b698;
+	z-index:100;
+}
+
+.info_small:hover {
+	background-color:#00857f;
+	cursor:pointer;
+}
+
+.twitter:hover {
+	background-color:#00857f;
+	cursor:pointer;
+}
+
+#content {
+	margin-top:100px;
+	vertical-align:middle;
+	margin-left:-150px;
+	left:50%;
+	bottom:50%;
+	margin-bottom:-160px;
+	position:fixed;
+	z-index:-1;
+}
+
+#caption {
+	width:100%;
+	text-align:center;
+	color:#fff;
+	font-size: 1em;
+	font-family: 'futura_book';	
+	position:absolute;
+	float:left;
+	bottom:10%;
+}
+
+#arrow_icon {
+	float:right;
+	margin-right:30px;
+	display: table-cell; vertical-align: middle;
+	height:100%;
+}
+
+#hint {
+	position: fixed;
+	right:-45px;
+	top:50%;
+	float:right;
+	z-index:-5;
+    -webkit-transform: rotate(90deg); 
+    -moz-transform: rotate(90deg); 
+    padding-top:6px;
+    padding-left:6px;
+    
+}
+
+#hint_touch {
+	position: fixed;
+	margin:auto;
+	margin-bottom:20px;
+	float:left;
+	left:50%;
+	z-index:-5;
+	display:none;
+}
+
+#scale_icon {
+	float:right;
+	z-index:-5;
+	display:block;
+	margin-top:-3px
+}
+
+#mobile_alert {
+	display:none;
+	top:0px;
+	width:100%;
+	float:left;
+	background: rgba(19, 19, 19, .5);
+	z-index:0;
+	margin:auto;
+	position:absolute;
+	height:100%;
+	overflow:hidden;
+}
+
+#mobile_alert p {
+	padding-top:50%;
+	color:#fff;
+	text-align:center;
+	margin:auto;
+	padding-left:30px;
+	padding-right:30px;
+}
+
+
+#top, #bottom, #left, #right {
+	background: #fff;
+	position: fixed;
+	z-index:120;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 8px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 8px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+       
+       
+       
+/* Style for overlay and box */
+        
+        a.activator {
+
+            z-index:1;
+            cursor:pointer;
+        }
+        
+        .box{
+			float:right;        
+            position:fixed;
+            right:-320px;
+            top:0px;
+            background-color:#fff;
+            color:#7F7F7F;
+            display:none;
+        }
+        
+        .box p {
+        	padding:30px;
+        	max-width:200px;
+        	font-size:0.95em;
+        	position:absolute; 
+			top:50px;
+			color:#2e303d;
+        }
+        
+        #box{
+        	width:320px;
+        	height:100%;
+        }
+
+		#about_heading {
+			padding:30px;
+        	position:absolute; 
+			top:0px;
+			color:#2e303d;
+		}
+		
+		#diagram {
+			padding:30px;
+        	position:absolute; 
+			bottom:270px;
+		}
+        
+        a.boxclose{
+        
+        	font-size: 1.5em;
+			font-family: 'futura_book';
+			float:right;
+			width:40px;
+			height:40px;
+			position:absolute;
+			right:30px;
+			top:30px;
+			color:#fff;
+			background-color:#00b698;
+			cursor:pointer;
+			z-index:120;
+        }
+        
+        a.boxclose:hover {
+        	background-color:#00857f;
+			cursor:pointer;
+        }
+        
+/* Style for overlay and box end*/        
+
+.icon {
+  width: 300px;
+  height: 300px;
+  background: url(/html/test/home_sprite.svg);
+  /*background: url(http://euronews.com/images/home_sprite.svg);*/
+  background-position: center top;
+}
+
+@media only screen and (min-width: 19em) {
+   .logo_small { display:block;} .logo_medium {display:none;} .logo_large {display:none;}
+}
+
+@media only screen and (min-width: 20em) and (min-height:10em) {
+   .logo_small { display:block;} .logo_medium {display:none;} .logo_large {display:none;}
+}
+
+@media only screen and (min-width: 30em) and (min-height:15em) {
+  .icon {background-position: center-300px;}
+   .logo_small { display:none;} .logo_medium {display:block;} .logo_large {display:none;} 
+}
+
+@media only screen and (min-width: 35em) and (min-height:15em) {
+  .icon {background-position: center -600px;}
+}
+
+@media only screen and (min-width: 40em) and (min-height:20em) {
+  .icon {background-position: center -900px;}
+}
+
+@media only screen and (min-width: 45em) and (min-height:25em) {
+  .icon {background-position: center -1200px;}
+  .logo_small { display:none;} .logo_medium {display:block;} v.logo_large {display:none;} 
+}
+
+@media only screen and (min-width: 50em) and (min-height:30em) {
+  .icon {background-position: center -1500px;}
+}
+
+@media only screen and (min-width: 55em) and (min-height:33em) {
+  .icon {background-position: center -1800px;}
+}
+
+@media only screen and (min-width: 60em) and (min-height:37em) {
+  .icon {background-position: center -2100px;}
+   .logo_small { display:none;} .logo_medium {display:none;} .logo_large {display:block;}   
+}
+
+@media only screen and (min-width: 65em) and (min-height:40em) {
+  .icon {background-position: center -2400px;}
+  .logo_small { display:none;} .logo_medium {display:none;} .logo_large {display:block;}  
+}

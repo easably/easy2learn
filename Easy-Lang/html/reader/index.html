@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="spanTooltip2.css" rel="stylesheet" />
+    <link href="esquire.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #f9f9f9;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        .idiom a {
+            border: 1px solid transparent;
+        }
+
+            .idiom a:hover {
+                border-color: #bcdaed;
+            }
+    </style>
+</head>
+
+<body>
+    <!--http://esquire.ru/aziza-ahmed-->
+    <p>
+        Аболиционисты настаивают на&nbsp;криминализации. Причем одни говорят, что незаконной должна быть продажа секса, 
+        а&nbsp;другие&nbsp;— в&nbsp;том числе борющиеся против проституции феминистки&nbsp;— предлагают запретить покупку секса. 
+        Они утверждают, что криминализация клиентов выдавит индустрию и&nbsp;бизнеса, освободит секс-работников, 
+        но&nbsp;при этом не&nbsp;превратит их&nbsp;в&nbsp;преступников. 
+        Такая модель уже пользуется успехом в&nbsp;некоторых странах. В&nbsp;1999 году покупку секса запретила Швеция, 
+        за&nbsp;ней последовали Норвегия и&nbsp;Исландия, вот-вот к&nbsp;ним присоединится Франция. 
+        В&nbsp;Германии дискуссия постепенно набирает 
+        <span class="footnote">обороты<span class="note">Феминистка Кэтлин Берри, основательница Коалиции против торговли женщинами, 
+            призывала заключить международный договор, который обяжет «задерживать, сажать в&nbsp;тюрьму и&nbsp;штрафовать 
+            любителей проституток».</span></span>. В&nbsp;действительности нет никаких убедительных доказательств того, что, 
+        наказывая любителей проституток, мы&nbsp;уменьшаем распространенность коммерческого секса. Зато шведские работники секс-индустрии 
+        свидетельствуют, что криминализация увела их&nbsp;в&nbsp;тень. Это привело к&nbsp;опасным последствиям: клиенты получили 
+        больше возможностей решать, где и&nbsp;когда они хотят заниматься сексом, а&nbsp;это лишает людей, предоставляющих услуги, 
+        возможностей самозащиты. При этом секс-работники оказываются меньше защищены от&nbsp;насилия и&nbsp;дискриминации со&nbsp;стороны 
+        сотрудников 
+        
+        <span class="footnote">правоохранительных органов<span class="note">Например, вынуждены отказываться от&nbsp;помощи 
+            властей в&nbsp;случае изнасилований, работорговли и&nbsp;пр.</span></span>.
+    </p>
+    <br/>
+    <br/>
+    <br/>
+    <div class="footnote-bar">sdfsdfsdfsdfsfdsfdsfdsdfsfdsdf sdfsdfsdfsdfsdff </div>
+
+    <div class="tt footnote-bar" style="display: none;">
+        Феминистка Кэтлин Берри, основательница Коалиции против торговли женщинами, 
+        призывала заключить международный договор, который обяжет «задерживать, 
+        сажать в&nbsp;тюрьму и&nbsp;штрафовать любителей проституток».</div>
+
+
+
+    
+    <a title="This is some information for our tooltip." class="tooltip">CSS3 Tooltip</a>
+
+    <span title="My tip">text</span>
+    <span class="tooltip" title="My tip">text2</span>
+
+
+    <ul class="idiom">
+        <li>
+            <a class="link-block" href="/team/lem-diaz">
+                <h3>Idiom</h3>
+                <h4>RECRUITING PARTNER</h4>
+                <p>Lem recruited teams at PayPal, Google, and Ning. He has a bachelor's in engineering.</p>
+            </a>
+        </li>
+        <li>
+            <a class="link-block" href="/team/maximos-lih">
+                <div class="portrait small">
+                    <img src="http://img.gv.com/wp-content/uploads/2013/09/maximos-lih-1024x1024.jpg?w=110&amp;h=110&amp;sharp=30&amp;dpr=2&amp;q=30&amp;s=089b055a042e3867ea4b412c9a673191" width="110" height="110">
+                </div>
+
+                <h3>Maximos Lih</h3>
+                <h4>RECRUITING PARTNER</h4>
+                <p>Maximos hires engineers and designers. He was previously at Google and Miso.</p>
+            </a>
+        </li>
+    </ul>
+
+    <p>text text <   class="tooltip" title="My tip">text2</>text</p>
+    <p>text text text</p>
+    <p>text text text</p>
+    <p>text text text</p>
+    <p>text text text</p>
+    <p>text text text</p>
+    <p>text text text</p>
+    <p>text text text</p>
+    <p>text text text</p>
+    <p>text text <span style="visibility: hidden">article</span> text</p>
+
+    <input id="text" class="span2" type="text" rel="tooltip" data-original-title="Text" data-placement="left" value="">
+    <input value="rrr">
+
+
+
+
+    <script src="../js/jquery-1.11.0.js"></script>
+
+    <script>
+        //(function (a) {
+        //    return "undefined" == typeof c || a && c.event.triggered === a.type ? p : c.event.dispatch.apply(h.elem, arguments)
+        //})();
+        //$('.footnote').on('click', function () { console.log(this); $(this).toggleClass("active"); });
+
+        //$('.footnote-bar').mouseout(function (a) {
+        //    return"undefined"==typeof c||a&&c.event.triggered===a.type?p:c.event.dispatch.apply(h.elem,arguments)
+        //});
+
+        //$('.tt').offset($($('.footnote')[0]).position())
+
+        var $ftn_active, $tt = $('.tt');
+
+        $tt.mouseout(function (e) {
+            $tt.offset({ top: 0, left: 0 });
+            $tt.hide();
+            if ($ftn_active) $ftn_active.removeClass('active');
+        });
+
+        $('.footnote').mouseover(
+            function (e) {
+                $ftn_active = $(this);
+                $ftn_active.addClass('active');
+                $tt.text($ftn_active.find('.note').text());
+                $tt.offset({ top: $ftn_active[0].offsetTop - 10, left: $ftn_active[0].offsetLeft - 20 });
+                $tt.show();
+            });
+
+    </script>
+</body>
+</html>

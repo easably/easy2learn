@@ -1,0 +1,15 @@
+2010 August - ver 0.97 beta
+
+2010 September - ver 1.0 
+Added function for editing text
+
+2010, September, 21 - ver 1.1 
+Added dictionaries for idioms
+
+2010, October, 82 - ver 1.13
+Watching video by subtitles
+
+2010, November, 02 - ver 1.14
+Short keys for navigation in video
+Auto Synchronization subtitles with video
+Auto Translation in Empty Text

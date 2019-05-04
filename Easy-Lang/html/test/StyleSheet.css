@@ -1,0 +1,72 @@
+﻿body {
+    overflow: hidden;
+}
+
+
+.icon3 {
+    width: 600px;
+    height: 600px;
+    background: url(/html/test/logo.svg);
+    background-position: center top;
+}
+
+.icon2 {
+    width: 300px;
+    height: 300px;
+    background-image: url(ok.png);
+    background-repeat:no-repeat;
+    background-position: center top;
+}
+
+/* Style for overlay and box end     /html/test/home_sprite.svg     */        
+
+.icon {
+    width: 600px;
+    height: 600px;
+    background: url(home_sprite.svg);
+    background-position: center top;
+}
+
+@media only screen and (min-width: 19em) {
+   .logo_small { display:block;} .logo_medium {display:none;} .logo_large {display:none;}
+}
+
+@media only screen and (min-width: 20em) and (min-height:10em) {
+   .logo_small { display:block;} .logo_medium {display:none;} .logo_large {display:none;}
+}
+
+@media only screen and (min-width: 30em) and (min-height:15em) {
+  .icon {background-position: center-300px;}
+   .logo_small { display:none;} .logo_medium {display:block;} .logo_large {display:none;} 
+}
+
+@media only screen and (min-width: 35em) and (min-height:15em) {
+  .icon {background-position: center -600px;}
+}
+
+@media only screen and (min-width: 40em) and (min-height:20em) {
+  .icon {background-position: center -900px;}
+}
+
+@media only screen and (min-width: 45em) and (min-height:25em) {
+  .icon {background-position: center -1200px;}
+  .logo_small { display:none;} .logo_medium {display:block;} v.logo_large {display:none;} 
+}
+
+@media only screen and (min-width: 50em) and (min-height:30em) {
+  .icon {background-position: center -1500px;}
+}
+
+@media only screen and (min-width: 55em) and (min-height:33em) {
+  .icon {background-position: center -1800px;}
+}
+
+@media only screen and (min-width: 60em) and (min-height:37em) {
+  .icon {background-position: center -2100px;}
+   .logo_small { display:none;} .logo_medium {display:none;} .logo_large {display:block;}   
+}
+
+@media only screen and (min-width: 65em) and (min-height:40em) {
+  .icon {background-position: center -2400px;}
+  .logo_small { display:none;} .logo_medium {display:none;} .logo_large {display:block;}  
+}

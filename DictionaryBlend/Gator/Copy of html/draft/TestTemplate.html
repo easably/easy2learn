@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>{0}</title>
+
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <script type="text/javascript">
+        var iOpened = 0;
+        $(document).ready(function() {
+            $("dd:not(:first)").hide();
+            $("dt a").click(function() {
+
+                var ind = $(this).parent().index();
+                if (iOpened != ind) {
+                    $("dd:visible").slideUp(200);
+                    $(this).parent().next().slideDown(600);
+                    iOpened = ind;
+                }
+                else {
+                    $("dd:visible").slideUp(200);
+                    iOpened = -1;
+                }
+                return false;
+            });
+            
+            $("dt img").click(function() {
+                $(this).parent().next().slideUp("slow");
+                return false;
+            });
+        });             
+    </script>
+
+    <style>
+        dt
+        {
+            border-color: #C0C0C0;
+            border-style: groove none none none;
+            background-position: #D8D8D8;
+            border-width: 1px 0 0 0;
+            background: #D8D8D8;
+            font-size: 18px;
+            padding: 5px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt id="1" ><a href="" title="ttttttt" id="11">Google</a> <img src="../../Img/closeNode16.png"><a target="_blank" href="http://www.tut.by" title="ttttttt" id="A1">...</a></dt>
+        <dd>
+        <table><column><tr>
+            sdf.;lks;df\<p>
+                sdfsdf<p>
+                    sdfsdf<p>
+                        <ul>
+                            <li><a href="http://jquery.com/src/">Download</a></li>
+                            <li><a href="http://jquery.com/docs/">Documentation</a></li>
+                            <li><a href="http://jquery.com/blog/">Blog</a></li>
+                        </ul>
+                        </tr></column>
+                        </table>
+                        <table><tr>table</tr></table>
+        </dd>
+        <dt id="2"><a  id="22" href="http://jquery.com/discuss/">Community</a></dt>
+        <dd style="display: none;">
+            <ul>
+                <li><a href="http://jquery.com/discuss/">Mailing List</a></li>
+                <li><a href="http://jquery.com/tutorials/">Tutorials</a></li>
+                <li><a href="http://jquery.com/demos/">Demos</a></li>
+                <li><a href="http://jquery.com/plugins/">Plugins</a></li>
+            </ul>
+        </dd>
+        <dt><a href="http://jquery.com/dev/">Development</a></dt>
+        <dd style="display: block;">
+            <ul>
+                <li><a href="http://jquery.com/src/">Source Code</a></li>
+                <li><a href="http://jquery.com/dev/bugs/">Bug Tracking</a></li>
+                <li><a href="http://jquery.com/dev/recent/">Recent Changes</a></li>
+            </ul>
+        </dd>
+        <dt><a href="">{0}</a></dt>
+        <dd>
+            {1}
+        </dd>
+        <dt><a href="">{0}</a></dt>
+        <dd>
+            {1}
+        </dd>
+        <dt ><a href="">{0}</a></dt>
+        <dd>
+            
+            <dt><a href="">000000</a></dt>
+            <dd>
+                111111
+            </dd>
+            
+            <dt><a href="">000000</a></dt>
+            <dd>
+                111111
+            </dd>
+            
+        </dd>
+    </dl>
+</body>
+</html>

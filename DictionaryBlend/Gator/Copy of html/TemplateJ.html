@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>{0}</title>
+
+    <script type="text/javascript" src="..\..\jquery.js"></script>
+
+    <script type="text/javascript">
+        var iOpened = 0;
+        $(document).ready(function() {
+            $("dd:not(:first)").hide();
+            $("dt a").click(function() {
+
+                var ind = $(this).parent().index();
+                if (iOpened != ind) {
+                    $("dd:visible").slideUp(200);
+                    $(this).parent().next().slideDown(600);
+                    iOpened = ind;
+                }
+                else {
+                    $("dd:visible").slideUp(200);
+                    iOpened = -1;
+                }
+                return false;
+            });
+        });    
+    </script>
+
+    <style>
+        dt
+        {
+            border-color: #C0C0C0;
+            border-style: groove none none none;
+            background-position: #D8D8D8;
+            border-width: 1px 0 0 0;
+            background: #D8D8D8;
+            font-size: 18px;
+            padding: 5px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        {1}     </dl>
+</body>
+</html>

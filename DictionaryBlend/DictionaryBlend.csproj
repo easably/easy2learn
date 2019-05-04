@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7E0AC426-8541-4CEE-9620-938ADCEBD2CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>f.db</RootNamespace>
+    <AssemblyName>DictionaryBlend</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>f.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>res\DictionaryBlend.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ComboBoxWithHistory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FloatWebBrowserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\FloatWebBrowserForm.Designer.cs">
+      <DependentUpon>FloatWebBrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WebBrowserForForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\WebBrowserForText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DictionaryBlend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DictionaryBlend.Designer.cs">
+      <DependentUpon>DictionaryBlend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gator\DictCollection.cs" />
+    <Compile Include="Gator\AsyncProvider.cs" />
+    <Compile Include="Gator\Favorit\RunFavoritDictContent.cs" />
+    <Compile Include="Gator\RunDictContent.cs" />
+    <Compile Include="Providers\Google\fromDEF\GoogleDefinitionBase.cs" />
+    <Compile Include="Providers\Google\GoogleDictionary_Depricated.cs" />
+    <Compile Include="Providers\Google\FromTranslate\GoogleTranslateBase.cs" />
+    <Compile Include="Providers\Definition\DicAcademic.cs" />
+    <Compile Include="Providers\Definition\MerriamWebsterThesaurus.cs" />
+    <Compile Include="Providers\de\Leo_org.cs" />
+    <Compile Include="Gator\Favorit\FavoritProvider.cs" />
+    <Compile Include="Providers\Google\FromTranslate\GoogleTranslateForIdiom.cs" />
+    <Compile Include="Providers\Mono en\Oxford.cs" />
+    <Compile Include="Providers\Mono en\UrbanDictionary.cs" />
+    <Compile Include="Providers\Multy\WordreferenceCom.cs" />
+    <Compile Include="Providers\ru\Synonymizer.cs" />
+    <Compile Include="Providers\ru\DicAcademic.cs" />
+    <Compile Include="Providers\Multy\Babylon.cs" />
+    <None Include="app.config" />
+    <None Include="Providers\Died\Freeopendictionary.cs" />
+    <Compile Include="Providers\Definition\BritannicaEncyclopedia.cs" />
+    <Compile Include="Providers\Mono en\Britannica.cs" />
+    <Compile Include="Providers\Definition\Wiktionary.cs" />
+    <None Include="Providers\Mono en\ReferenceCom.cs" />
+    <Compile Include="Providers\Google\fromDEF\GoogleMonoDictionary.cs" />
+    <None Include="Providers\Died\enGoogleDictionary.cs" />
+    <Compile Include="Providers\idiom\IdiomThefreedictionary.cs" />
+    <Compile Include="Providers\Mono en\Longman.cs" />
+    <Compile Include="Providers\Mono en\MerriamWebster.cs" />
+    <Compile Include="GlobalOptions.cs" />
+    <Compile Include="HistoryItem.cs" />
+    <Compile Include="Options\Dictionaries.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Dictionaries.Designer.cs">
+      <DependentUpon>Dictionaries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\DictionaryProviderViewForList.cs" />
+    <Compile Include="Options\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Providers\Mono en\Dictionary_Encyclopedia.cs" />
+    <Compile Include="Providers\Mono en\Dictionary_com.cs" />
+    <Compile Include="Properties\html.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>html.resx</DependentUpon>
+    </Compile>
+    <None Include="Providers\idiom\CambridgeIdioms.cs" />
+    <Compile Include="Providers\Definition\Wikipedia.cs" />
+    <Compile Include="Providers\DictionaryProvider.cs" />
+    <Compile Include="Providers\Google\CustomTranslationSearch.cs" />
+    <Compile Include="Providers\Google\fromDEF\GoogleSynonymsDictionary.cs" />
+    <Compile Include="Providers\Google\fromDEF\GoogleWebDefinition.cs" />
+    <Compile Include="Providers\Google\FromTranslate\GoogleDictionary.cs" />
+    <Compile Include="Providers\Google\FromTranslate\GoogleTipDictionary.cs" />
+    <Compile Include="Providers\IDictionaryProvider.cs" />
+    <Compile Include="Providers\idiom\Idiomcenter.cs" />
+    <Compile Include="Providers\idiom\Wikidioms.cs" />
+    <Compile Include="Providers\Multy\Lingvo.cs" />
+    <Compile Include="Providers\Multy\MultitranDictionary.cs" />
+    <Compile Include="Providers\Multy\Thefreedictionary.cs" />
+    <Compile Include="Providers\Mono en\WordNet.cs" />
+    <Compile Include="Gator\Favorit\Gator.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\FloatWebBrowserForm.resx">
+      <DependentUpon>FloatWebBrowserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DictionaryBlend.resx">
+      <DependentUpon>DictionaryBlend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Dictionaries.resx">
+      <DependentUpon>Dictionaries.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\html.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>html.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Providers\Google\Translate.htm" />
+    <Content Include="Providers\Mono en\Oxford_Test.htm" />
+    <Content Include="Providers\Google\HTMLPageForLoad.htm" />
+    <Content Include="Providers\Multy\Lingvo_Test.htm" />
+    <Content Include="res\img\google.png" />
+    <Content Include="res\img\googleBlue.png" />
+    <Content Include="res\img\googleFull.png" />
+    <None Include="res\img\Options.png" />
+    <Content Include="res\img\redAsterisk.png" />
+    <None Include="Providers\Google\FromTranslate\ClassDiagram.cd" />
+    <None Include="res\img\redAsterisk8_.png" />
+    <None Include="res\img\search.jpg" />
+    <Content Include="res\img\search.png" />
+    <None Include="res\img\search16.png" />
+    <Content Include="res\img\speaker.png" />
+    <Content Include="ToDo.txt" />
+    <None Include="Resources\email.png" />
+    <Content Include="Providers\TODO.txt" />
+    <Content Include="res\img\Configuration.png" />
+    <Content Include="res\img\ConfigurationBW.png" />
+    <Content Include="res\img\pin.png" />
+    <Content Include="res\img\PinSmall.png" />
+    <Content Include="res\img\Reverse.png" />
+    <Content Include="res\img\Reverse_.png" />
+    <None Include="Gator\Copy of html\draft\initial TestTemplate.html" />
+    <None Include="Gator\Copy of html\draft\TestTemplate.html" />
+    <None Include="Gator\Copy of html\jquery.js" />
+    <None Include="Gator\Copy of html\Template.html" />
+    <None Include="Gator\Copy of html\TemplateJ.html" />
+    <None Include="Gator\Copy of html\draft\Test.html" />
+    <None Include="Gator\Copy of html\draft\Copy of Test.html" />
+    <Content Include="Providers\Google\TODO CustomTranslationSearch.txt" />
+    <Content Include="res\DictionaryBlend.ico" />
+    <None Include="res\icon_wait.gif" />
+    <None Include="Gator\webengine.txt" />
+    <None Include="Gator\html\draft\TestTemplate.html" />
+    <None Include="Gator\html\TemplateJ.html" />
+    <None Include="Gator\html\Template.html" />
+    <None Include="Gator\html\jquery.js" />
+    <None Include="Gator\html\draft\initial TestTemplate.html" />
+    <None Include="Gator\html\draft\Copy of Template.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common.Sound\Common.Sound.csproj">
+      <Project>{4F9116BE-2A65-46C9-BDDE-4CA77AA15958}</Project>
+      <Name>Common.Sound</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{717118F9-6D3F-4C61-A516-2FD349726435}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\out\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>SET var=%25cd%25
+ECHO %25var%25
+..\..\..\tools\ILMerge\ILMerge.exe /log:out/log.txt /target:win /out:out/$(TargetFileName) $(TargetPath)  $(TargetDir)Common.dll $(TargetDir)Common.Sound.dll $(TargetDir)Interop.WMPLib.dll
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

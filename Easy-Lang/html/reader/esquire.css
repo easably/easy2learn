@@ -1,0 +1,29 @@
+﻿.footnote {
+    border-bottom: 1px dotted #0082dd;
+    color: #0082dd;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+    .footnote.active {
+        z-index: 101;
+        position: relative;
+    }
+
+    .footnote .note {
+        display: none;
+    }
+
+.footnote-bar {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 18px;
+    padding-top: 40px;
+    width: 240px;
+    z-index: 100;
+    display: none;
+    color: #272727;
+    font-size: 11px;
+    line-height: 18px;
+}

@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <p class="programs-listbox-block">
+    Select your programmes using the listbox:                  <select name="programs_listbox" id="programs_listbox">
+                <option value="">Choose...</option>
+                        <optgroup label="B" title="B">
+                      <option value="#Brussels bureau" class="alternative">Brussels bureau</option>
+                      <option value="#business planet">business planet</option>
+                      <option value="#business weekly" class="alternative">business weekly</option>
+                    </optgroup>
+                    <optgroup label="C" title="C">
+                      <option value="#cinema">cinema</option>
+                    </optgroup>
+                    <optgroup label="E" title="E">
+                      <option value="#europe weekly" class="alternative">europe weekly</option>
+                    </optgroup>
+                    <optgroup label="F" title="F">
+                      <option value="#focus">focus</option>
+                      <option value="#for children in war" class="alternative">for children in war</option>
+                      <option value="#futuris">futuris</option>
+                    </optgroup>
+                    <optgroup label="G" title="G">
+                      <option value="#generation y" class="alternative">generation y</option>
+                    </optgroup>
+                    <optgroup label="H" title="H">
+                      <option value="#hi-tech">hi-tech</option>
+                    </optgroup>
+                    <optgroup label="I" title="I">
+                      <option value="#innovation" class="alternative">innovation</option>
+                      <option value="#interview">interview</option>
+                      <option value="#i talk" class="alternative">i talk</option>
+                    </optgroup>
+                    <optgroup label="L" title="L">
+                      <option value="#learning world">learning world</option>
+                      <option value="#le mag" class="alternative">le mag</option>
+                      <option value="#life">life</option>
+                    </optgroup>
+                    <optgroup label="M" title="M">
+                      <option value="#markets" class="alternative">markets</option>
+                      <option value="#metropolitans">metropolitans</option>
+                      <option value="#musica" class="alternative">musica</option>
+                    </optgroup>
+                    <optgroup label="N" title="N">
+                      <option value="#news +">news +</option>
+                      <option value="#no comment" class="alternative">no comment</option>
+                    </optgroup>
+                    <optgroup label="O" title="O">
+                      <option value="#on the frontline">on the frontline</option>
+                    </optgroup>
+                    <optgroup label="P" title="P">
+                      <option value="#perspectives" class="alternative">perspectives</option>
+                    </optgroup>
+                    <optgroup label="R" title="R">
+                      <option value="#real economy">real economy</option>
+                      <option value="#rendez-vous" class="alternative">rendez-vous</option>
+                      <option value="#reporter">reporter</option>
+                      <option value="#right on" class="alternative">right on</option>
+                    </optgroup>
+                    <optgroup label="S" title="S">
+                      <option value="#science">science</option>
+                      <option value="#silent disasters" class="alternative">silent disasters</option>
+                      <option value="#space">space</option>
+                    </optgroup>
+                    <optgroup label="T" title="T">
+                      <option value="#target" class="alternative">target</option>
+                      <option value="#terra viva">terra viva</option>
+                      <option value="#the global conversation" class="alternative">the global conversation</option>
+                      <option value="#the network">the network</option>
+                      <option value="#tomorrow's city" class="alternative">tomorrow's city</option>
+                    </optgroup>
+                    <optgroup label="U" title="U">
+                      <option value="#u talk">u talk</option>
+                    </optgroup>
+                    <optgroup label="W" title="W">
+                      <option value="#women and war" class="alternative">women and war</option>
+                    </optgroup>
+                      </select>
+                  <script type="text/javascript">
+                      //<![CDATA[
+                      try {
+                          (function () {
+                              var pl = document.getElementById('programs_listbox');
+                              if (pl) {
+                                  pl.onchange = function (e) {
+                                      var v = this.value;
+                                      setTimeout(function () { window.location = v; }, 100);
+                                  };
+                              };
+                          })();
+                      }
+                      catch (err) {
+                          alert(err);
+                      }
+                      //]]>
+              </script>
+            </p>
+</body>
+</html>

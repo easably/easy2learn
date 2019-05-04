@@ -1,0 +1,1 @@
+%windir%\system32\msiexec.exe /x {1A205645-D2AF-4705-97C5-57F893F3B296} /qb!

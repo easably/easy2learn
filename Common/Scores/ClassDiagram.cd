@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="f.ScoreUtils">
+    <Position X="0.5" Y="1" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAIAAAACAAACgAICBAIAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Scores\ScoreUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="f.ScoreData">
+    <Position X="7" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>FABAAAAkAAAAgAAAAgAEAACAACAQAAACAIIEAARQACA=</HashCode>
+      <FileName>Scores\ScoreData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="f.IScoreUnit">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAgEAAAAAAAAAEAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Scores\IScoreUnit.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="f.ScoreState">
+    <Position X="11.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAABAAAAAAAAAIAAAAAAAAABA=</HashCode>
+      <FileName>Scores\ScoreState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

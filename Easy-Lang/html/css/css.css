@@ -1,0 +1,51 @@
+﻿html {
+    overflow: hidden;
+    /*overflow-x: hidden;*/
+}
+
+/*text {
+font-size:10px;
+}*/
+.sent-block rect{
+    fill: #5a5757;
+    opacity: .8;
+}
+
+.sent-block rect:hover {
+    /*fill: #000000;*/
+    opacity: .8;
+    opacity: 1;
+
+    /*stroke: #ffffff;
+    stroke-width: 1;*/
+}
+
+.sent-block .active{
+    /*fill: #000000;*/
+    opacity: 1;
+
+    stroke: #000000;
+    stroke-width: 1;
+   /* stroke-opacity: .7;*/
+}
+
+.scroller {
+    opacity :0;
+     fill: #ff0000;
+     cursor:url(http://easy4learn.com/assets/cur/resize.gif), auto;
+     /*cursor: url(html/assets/cur/resize.gif);*/
+ 
+   /*
+  cursor:url(http://easy4learn.com/assets/cur/resize.gif), auto;
+         cursor :col-resize;
+
+     fill: #ff0000;
+     cursor:url(/html/assets/cur/left-resize.gif), auto;     
+        */
+}
+
+/*.sent-block .active:hover{
+    stroke-opacity: 1;
+    cursor:url(/html/assets/cur/left-resize.gif), auto;
+    cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
+}*/

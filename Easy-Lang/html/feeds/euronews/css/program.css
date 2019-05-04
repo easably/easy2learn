@@ -1,0 +1,292 @@
+﻿dfn
+	{
+	background:transparent;
+	}
+.framed-title
+	{
+	color:#787878;
+	}
+.program-header-wrap
+	{
+	position:relative;
+	}
+.program-header
+	{
+	position:relative;
+	}
+.program-share
+	{
+	padding:10px 10px 0 0;
+	}
+.program-description
+	{
+	padding:0 10px 10px 10px;
+	border-bottom:1px solid #ccc;
+	margin-bottom:1em;
+	}
+.program-fb-share,
+.program-tw-share,
+.program-yt-share
+	{
+	float:right;	
+	margin-left:10px;	
+	}
+.program-yt-share img
+	{
+	width:80px;
+	height:auto;	
+	}
+.readmore
+	{
+	text-align:right;
+	}
+.main-title
+	{
+	margin:0 0 10px 0;
+	}
+.cet
+	{
+	margin:0 0 10px 0;
+	text-transform:uppercase;
+	}
+.headline-block ol,
+.headline-block li
+	{
+	list-style-type:none !important;
+	margin:0 !important;
+	padding:0 !important;
+	background:transparent !important;
+	}
+.headline-block li a 
+	{
+	padding:0;
+	display:block;
+	text-overflow: ellipsis;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.headline-block li a span
+	{
+	margin-right:1em;
+	color:#444;
+	font-weight:bold;
+	}
+.headline-block li a:hover span,
+.headline-block li a:focus span
+	{
+	color:#222;
+	}
+.program-listing h3
+	{
+	text-shadow:none;
+	font-weight:normal;
+	letter-spacing: 1px;
+    padding:0;
+    text-transform: uppercase;
+	}
+.program-listing ul
+        {
+        margin:0;
+        padding:0;
+        display:block;
+        }
+.program-listing li
+        {
+        display:block;
+        width:300px;
+        margin:0 7px 6px 0;
+        float:left;
+        clear:both;
+        }
+.program-listing li.odd
+        {
+        margin-right:0;
+        clear:none;
+        }
+.program-listing li img
+        {
+        float:left;
+        margin: 0 5px 0 0;
+        }
+.program-listing li a
+        {
+        display:block;
+        position:relative;
+        text-decoration:none;
+        width:290px;
+        height:73px;
+        overflow:hidden;
+        border:1px solid #ccc;
+        padding:4px;
+        color:#444;
+        background:#fff;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f1efef));
+        background: -moz-linear-gradient(top,  #ffffff,  #f1efef);
+        }
+.program-listing li a:hover
+        {
+        border:1px solid #555;
+        color:#222;
+        }
+.program-listing a span
+        {
+        color:#eee;
+        font-size:10px;
+        font-weight:normal;
+        position:absolute;
+        bottom:4px;
+        left:4px;
+        padding:0.2em 0;
+        width:130px;
+        text-shadow:0 1px #000;
+        background:rgba(0,0,0,.6);
+        text-align:center;
+        display:block;
+        }
+.program-listing a:hover span,
+.program-listing a:focus span
+        {
+        background:rgba(0,0,0,.8);
+        color:#fff;
+        }
+.rtl .program-listing li img
+    {
+    float:right;
+    margin: 0 0 0 5px;
+    }
+.rtl .program-listing a 
+    {
+    direction:rtl;
+    }
+.rtl .program-listing a span
+    {
+    right:4px;
+    left:auto;
+    }
+    
+    
+    
+.program-bonus h3
+	{
+	text-shadow:none;
+	font-weight:normal;
+	letter-spacing: 1px;
+    padding:0;
+    text-transform: uppercase;
+	}
+.program-bonus ul
+        {
+        margin:0;
+        padding:0;
+        display:block;
+        }
+.program-bonus li
+        {
+        display:block;
+        width:300px;
+        float:left;
+        clear:both;
+        }
+.program-bonus li.odd
+        {
+        margin-right:0;
+        clear:none;
+        }
+.program-bonus li div 
+        {
+        clear:both;
+        font-weight: normal;
+        }
+.program-bonus li img
+        {
+        float:left;
+        margin: 0 5px 0 0;
+        }
+.program-bonus li a
+        {
+        display:block;
+        position:relative;
+        text-decoration:none;
+        width:290px;
+        height:80px;
+        overflow:hidden;
+        padding:4px;
+        color:#444;
+
+        }
+.program-bonus li a:hover
+        {
+        color:#222;
+        }
+.program-bonus a span
+        {
+        color:#eee;
+        font-size:10px;
+        font-weight:normal;
+        position:absolute;
+        bottom:4px;
+        left:4px;
+        padding:0.2em 0;
+        width:130px;
+        text-shadow:0 1px #000;
+        background:rgba(0,0,0,.6);
+        text-align:center;
+        display:block;
+        }
+.program-bonus a:hover span,
+.program-bonus a:focus span
+        {
+        background:rgba(0,0,0,.8);
+        color:#fff;
+        }
+.rtl .program-bonus li img
+    {
+    float:right;
+    margin: 0 0 0 5px;
+    }
+.rtl .program-bonus a 
+    {
+    direction:rtl;
+    }
+.rtl .program-bonus a span
+    {
+    right:4px;
+    left:auto;
+    }
+    
+    
+    
+    
+    
+    
+.rtl .headline-block li a 
+	{
+	padding:0;
+	display:block;
+	text-overflow: ellipsis;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.rtl .headline-block li a span
+	{
+	margin-right:0;
+	margin-left:1em;
+	float:right;
+	}
+.rtl .readmore
+	{
+	text-align:left;
+	direction:rtl;
+	}
+.rtl .cet
+	{
+	direction:ltr;
+	text-align:right;
+	}
+.rtl .article-teaser
+	{
+	direction:rtl;
+	text-align:right;
+	}

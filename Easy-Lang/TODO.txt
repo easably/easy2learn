@@ -1,0 +1,146 @@
+﻿BUGs:
+
+При возврате в программу не сразу фокус включается
+
+Zoom толком не работает
+Закрываем субтитры, при этом закрывается не сохраненный Lesson (при cansel сохранить Lesson) Lesson все равно не буде сохранен
+
+Pause on space don't working
+Repeat press Space Play 
+
+Alt + S don't working
+Hint - плохо работает
+
+===============
+
+Features:
+
+Repeat с синхронизацией
+
+Назначение файлов
+кнопки на выделение
+
+Автосинхронизация
+РЕБРЕНДИНГ Иконки
+
+Добавление выражений и примечания
+
+TimeShift лучше не запоминать а то не разберутся
+
+в TwinText работает по SelectedText, в итоге выделенное руское слово переводит на русский
+в итоге ограничил if(this.ActiveControl == textEn)
+Но и контекстное меню недизейблит словари для русского из textTranslate 
+
+Опция отключающую автоширину (или высоту) на контролах при изменении размеров
+
+
+Переход по номерам
+Подсветка номеров в поиске (или поиск переделать)
+
+
+поддержка моно словаря в -> private void PopupDictionaryArticle(RichTextBox sender, MouseEventArgs e)
+Когда апликация теряет фокус то неплохо было бы делать UnTop для видео формы
+Поиск в группе словарей
+ClickOnce 
+
+дать все варианты для - [[["где-то здесь","around here","gde-to zdesʹ",""]],[["adverb",["в этом районе","неподалеку"]]],"en",,[["где-то здесь",[5],1,,841,0,4,0]],[["around here",4,,,""],["around here",5,[["где-то здесь",841,1,],["тут",154,1,],["тутом",0,1,],["туте",0,1,],["тута",0,1,]],[[0,11]],"around here"]],,,,41]
+нафиг -> Запись ИндентХистори в Sentence (записывает смещение индента только после прокрутки английского)
+
+Желтую точку лучше отрисовать
+
+===============
+
+Рефакторинг:
+добавление ресурсов из кода
+
+глобальная обработка нажатий клавиш
+showing theards by word WordName
+
+
+выделить World Thesaurus
+
+
+for watching video step by step with english subtitles and with subtitles in other language
+
+
+============ RoadMap ============
+1. Movie Subtitler
+
+2. Dictionary Blend
+
+3. Bilingual Reader
+
+4. World Thesaurus
+
+5. Transcription Writer
+
+6. ???  Tutor History
+
+7. MobileTutor
+
+============ RoadMap ============
+
+
+Downloaded page with portable edition aka http://www.lingoes.net/en/translator/download.htm
+
+MultiLanguages Resources -> Books on local librarry
+
+При изменении текста надо идиомы пересчитать
+
+Кнопку для перехода по предложениям
+В опциях контекстного меню показать вкллюченные словари
+Сохранение состояний
+http://www.forcemem.com/support.htm (skype ссылка на форум)
+
+double click on idiom ??
+
+http://movies.nytimes.com/movie/460757/Restrepo/overview?8dpc -- all article woldnot translated
+
+If open programm with filename, them dran-ndrop text, them reopen program olded file was not suggested
+
+============ for site ============
+The Reflector download now includes a 14-day free trial of .NET Reflector Pro
+lingvo images for transcription with pronounce
+space not working from native textbox - так и надо
+============ for site ============
+
+
+============ future future future ====================
+http://www.smartlinkcorp.com/translation-software/_Any_Language-Translation_Software-Any_Platform.html
+http://translation2.paralink.com/ 
+// механизмы перевода
+
+
+быстрый доступ к недавним словарям
+support for phone
+Obfuscator
+Описание словарика
+
+Save (Save As)
+Экономная загрузка памяти
+Emails ревизия
+
+Estimate в види облака тэгов
+
+regime worrld not found (lingvo -Translations were found  )
+
+Memory 130 mb
+Меню долго открывается
+Ctrl+Click
+Open in Dictionary Idiom
+
+- Две запущенные программы не  могут озвучивать файлы.
+добавить словари
+добавить http://query.nytimes.com/search/query?srchst=ref&query=have%20
+
+============ future future future ====================
+
+FAQ
+Написать что имеет ограниченный срок использования
+Если Вы имеете медленные интернет то вы можете отключить большее кол-во словарей в опциях программы.
+
+------------ Subtitle Displayer ------------ 
+
+Subtitle Displayer DivX 5.0 is a practical and fairly simple display subtitles for DivX movies, the operation is very easy because one side is playing the film and goes next to a window displaying subtitles belonging to it.
+
+In the author's website you can find links to several sites where you can find subtitles (extension SRT) of these DivX you've downloaded in another language and for which you need to have the subtitles to understand.

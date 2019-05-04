@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>QUnit Example</title>
+    <link href="../bower_components/qunit/qunit/qunit.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="../bower_components/qunit/qunit/qunit.js"></script>
+    <script src="../js/d3.v3.js"></script>
+    <script src="../js/scroller.js"></script>
+    <script>
+        var rawSentences = [39.1, 2.52, 2.48, 8.16, 3.48, 4.16, 12.88, 4.28, 2.88];
+        test("working with sentences", function () {
+            asignSentences(rawSentences);
+
+            function checkAllLength(doRounding) {
+                deepEqual(
+                    d3.sum(sentenceses, function (d) { return d.length; }),
+                        doRounding ? allLength + .00000000000001 : allLength, "video.length");
+            }
+
+            deepEqual(sentenceses.length, 9, "sentenceses.length");          
+            deepEqual(sentenceses[0].getNexts().length, 8, "getNexts().length");
+            var allLength = 79.94;
+
+            deepEqual(video.length, allLength, "video.length");
+            deepEqual(d3.sum(sentenceses, function (d) { return d.length; }),
+                allLength, "video.length by sum function");
+
+            // changeLength - 
+            deepEqual(sentenceses[2].startTime, 41.620000000000005, "changeLength - sentenceses[2].length");
+            sentenceses[1].changeLength(2, false);
+            deepEqual(sentenceses[1].length, 2, "changeLength - sentenceses[1].length");
+            deepEqual(sentenceses[2].length, 3, "changeLength - sentenceses[2].length");
+            deepEqual(sentenceses[2].startTime, 41.1, "schangeLength - entenceses[2].length");
+
+            checkAllLength();
+
+            // cheking arguments
+            throws(function () { new Sent(0, 0, undefined); }, /Length for sentence/, 'Error message');
+            throws(function () { sentenceses[1].changeLength(); }, /Length for sentence/, 'Error message'); // (new Sent(0,0,0)).ERROR_1 == undefined
+
+            // d3.scale - tests
+            //                             precent           actual value
+            var scaler = d3.scale.linear().domain([0, 100]).range([0, 1920]);
+            deepEqual(scaler(1), 19.2, "d3 scaler test 1%");
+            deepEqual(scaler(100), 1920, "d3 scaler test 100%");
+            scaler = d3.scale.linear().domain([0, allLength]).range([0, 1920]);
+            deepEqual(d3.sum(sentenceses, function (d) { return scaler(d.length); }),
+                1920, "video.length");
+
+            // changeLengthAndShiftOther    
+            deepEqual(sentenceses[1].getNexts().length, 7, "getNexts().length");
+            deepEqual(sentenceses[7].length, 4.28, "changeLength - sentenceses[1].length");
+            deepEqual(sentenceses[7].startTime, 72.78, "startTime - sentenceses[1].length");
+            deepEqual(sentenceses[8].length, 2.88, "changeLength - sentenceses[2].length");
+            deepEqual(sentenceses[8].startTime, 77.06, "startTime - sentenceses[2].length");
+            sentenceses[6].changeLengthAndShiftOther(10, false); // was 12.88 (-2.88)
+            deepEqual(sentenceses[7].length, 6.001564245810056, "changeLength - sentenceses[1].length");
+            deepEqual(sentenceses[7].startTime, 69.9, "startTime - sentenceses[1].length");
+            deepEqual(sentenceses[8].length, 4.038435754189944, "changeLength - sentenceses[2].length");
+            deepEqual(sentenceses[8].startTime, 75.90156424581006, "startTime - sentenceses[2].length");
+            checkAllLength(true);
+
+        });
+
+        test("testController", function () {
+            asignSentences(rawSentences);
+            deepEqual(sentenceses.length, 9, "sentenceses.length");
+            window.cntrl = {};
+            var chekingVal = '';
+            window.cntrl.doCorrectionForLengths = function (val) {
+                chekingVal = val;
+            };
+            doCorrectionForLengths(); // call
+            deepEqual(chekingVal, "39.1, 2.52, 2.48, 8.16, 3.48, 4.16, 12.88, 4.28, 2.88, ", "transfer data with doCorrectionForLengths");
+        });
+    </script>
+</body>
+</html>

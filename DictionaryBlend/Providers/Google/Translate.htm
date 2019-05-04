@@ -1,0 +1,202 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    <script language="javascript">        function expandAll() { var tds = document.getElementsByTagName("td"); for (var i = 0; i < tds.length; i++) if (tds[i].style != null) tds[i].style.visibility = "visible"; }
+        function toggle(arg) { var el = document.getElementById(arg + 'f'); if (el.style.visibility == "visible") { el.style.visibility = "hidden"; el = document.getElementById(arg + 's'); el.style.visibility = "hidden"; } else { el.style.visibility = "visible"; el = document.getElementById(arg + 's'); el.style.visibility = "visible"; } }  </script>
+
+    <h6 class="hrefStyle" onclick="expandAll()">
+        Expand All</h6>
+    <table cellpadding="0" cellspacing="0">
+        <tr class="hrefStyle firstRow">
+            <td title="Show/Hide Translation" onclick="toggle('0')">
+            </td>
+            <td class="odd" title="Show/Hide Translation" onclick="toggle('1')">
+                Then you can
+            </td>
+            <td title="Show/Hide Translation" onclick="toggle('2')">
+                repeat the
+            </td>
+            <td class="odd" title="Show/Hide Translation" onclick="toggle('3')">
+                lesson
+            </td>
+            <td title="Show/Hide Translation" onclick="toggle('4')">
+                in program
+            </td>
+            <td class="odd" title="Show/Hide Translation" onclick="toggle('5')">
+                Easy -
+            </td>
+            <td title="Show/Hide Translation" onclick="toggle('6')">
+                Learn
+            </td>
+            <td class="odd" title="Show/Hide Translation" onclick="toggle('7')">
+                .
+            </td>
+            <td title="Show/Hide Translation" onclick="toggle('8')">
+                See
+            </td>
+            <td class="odd" title="Show/Hide Translation" onclick="toggle('9')" nowrap="nowrap">
+                menu item
+            </td>
+            <td title="Show/Hide Translation" onclick="toggle('10')">
+                File
+            </td>
+            <td class="odd" title="Show/Hide Translation" onclick="toggle('11')">
+                Lesson
+            </td>
+            <td title="Show/Hide Translation" onclick="toggle('12')">
+                ( My
+            </td>
+            <td class="odd" title="Show/Hide Translation" onclick="toggle('13')">
+                Dictionary )
+            </td>
+            <td title="Show/Hide Translation" onclick="toggle('14')">
+                " .
+            </td>
+        </tr>
+        <tr class="bold">
+            <td id="0f" style="visibility: hidden">
+            </td>
+            <td class="odd" id="1f" style="visibility: hidden">
+                Затем вы можете
+            </td>
+            <td id="2f" style="visibility: hidden">
+                повторить
+            </td>
+            <td class="odd" id="3f" style="visibility: hidden">
+                урок
+            </td>
+            <td id="4f" style="visibility: hidden">
+                в программе
+            </td>
+            <td class="odd" id="5f" style="visibility: hidden">
+                Легко
+            </td>
+            <td id="6f" style="visibility: hidden">
+                учиться
+            </td>
+            <td class="odd" id="7f" style="visibility: hidden">
+                .
+            </td>
+            <td id="8f" style="visibility: hidden">
+                Смотрите
+            </td>
+            <td class="odd" id="9f" style="visibility: hidden">
+                пункт меню
+            </td>
+            <td id="10f" style="visibility: hidden">
+                Файл
+            </td>
+            <td class="odd" id="11f" style="visibility: hidden">
+                урока
+            </td>
+            <td id="12f" style="visibility: hidden">
+                (Мой
+            </td>
+            <td class="odd" id="13f" style="visibility: hidden">
+                словарь)
+            </td>
+            <td id="14f" style="visibility: hidden">
+                ».
+            </td>
+        </tr>
+        <tr>
+            <td id="0s" style="visibility: hidden">
+            </td>
+            <td class="odd" id="1s" style="visibility: hidden">
+                После этого вы можете<br />
+                Тогда вы можете<br />
+                Затем можно<br />
+                После этого можно<br />
+            </td>
+            <td id="2s" style="visibility: hidden">
+                повторишь<br />
+                повторим<br />
+                повторю<br />
+                повторите<br />
+            </td>
+            <td class="odd" id="3s" style="visibility: hidden">
+                урока<br />
+                уроками<br />
+                уроках<br />
+                урокам<br />
+            </td>
+            <td id="4s" style="visibility: hidden">
+            </td>
+            <td class="odd" id="5s" style="visibility: hidden">
+                Простой<br />
+                Простое<br />
+                Простая<br />
+            </td>
+            <td id="6s" style="visibility: hidden">
+            </td>
+            <td class="odd" id="7s" style="visibility: hidden">
+            </td>
+            <td id="8s" style="visibility: hidden">
+                См.<br />
+                Смотри<br />
+                Смотреть<br />
+                Посмотреть<br />
+            </td>
+            <td class="odd" id="9s" style="visibility: hidden">
+            </td>
+            <td id="10s" style="visibility: hidden">
+                файла<br />
+                файле<br />
+                файло<br />
+                файлами<br />
+            </td>
+            <td class="odd" id="11s" style="visibility: hidden">
+                Урок<br />
+                уроке<br />
+                занятием<br />
+                занятия<br />
+            </td>
+            <td id="12s" style="visibility: hidden">
+            </td>
+            <td class="odd" id="13s" style="visibility: hidden">
+            </td>
+            <td id="14s" style="visibility: hidden">
+            </td>
+        </tr>
+    </table>
+    <style type="text/css">
+        table
+        {
+            border: none;
+        }
+        td
+        {
+            vertical-align: top;
+            padding-left: 13px;
+            vertical-align: top;
+            padding-bottom: 10px;
+            padding-right: 10px;
+        }
+        .bold
+        {
+            color: #333333;
+            font-weight: bold;
+        }
+        .odd
+        {
+            background-color: #EAEAEA;
+        }
+        .hrefStyle
+        {
+            color: #1122CC;
+            text-decoration: underline;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .firstRow td
+        {
+             nowrap:nowrap;
+        }
+    </style>
+</body>
+</html>

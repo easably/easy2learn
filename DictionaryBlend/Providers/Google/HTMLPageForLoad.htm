@@ -1,0 +1,94 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+</head>
+<body>
+
+    <script language="javascript">        function toggle(arg) { var el = document.getElementById(arg + 'f'); if (el.style.visibility == "visible") { el.style.visibility = "hidden"; el = document.getElementById(arg + 's'); el.style.visibility = "hidden"; } else { el.style.visibility = "visible"; el = document.getElementById(arg + 's'); el.style.visibility = "visible"; } }  </script>
+
+    <style type="text/css">
+        table
+        {
+            border: none;
+        }
+        td
+        {
+            vertical-align: top;
+            padding-left: 13px;
+            vertical-align: top;
+            padding-bottom: 10px;
+            padding-right: 10px;
+        }
+        .bold
+        {
+            color: #333333;
+            font-weight: bold;
+        }
+        .odd
+        {
+            background-color: #EAEAEA;
+        }
+        .hrefStyle
+        {
+            color: #1122CC;
+            text-decoration: underline;
+            cursor: pointer;
+            user-select: none;
+        }
+    </style>
+
+    <script language="javascript">
+        function showTransl() {
+            var el = document.getElementById('transl');
+            el.style.visibility = "visible";
+            el = document.getElementById('h');
+            el.style.display = "none"; 
+    }</script>
+
+    <h3 id="h" class="hrefStyle" onclick="showTransl()">Show translation ... </h3>
+    <br />
+    <table id="transl" style="visibility: hidden" cellpadding="0" cellspacing="0">
+        <tr class="bold">
+            <td>
+                Можем ли мы
+            </td>
+            <td class="odd">
+                остановиться
+            </td>
+            <td>
+                в аптеке
+            </td>
+            <td class="odd">
+                на мгновение
+            </td>
+            <td>
+                ...
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Сможем ли мы<br />
+                Можно ли<br />
+                Могли бы мы<br />
+                Могли ли мы<br />
+            </td>
+            <td class="odd">
+                остановимся<br />
+                остановку<br />
+                остановитесь<br />
+                останавливаются<br />
+            </td>
+            <td>
+            </td>
+            <td class="odd">
+                на минуту<br />
+                на мгновенье<br />
+                на миг<br />
+                на секунду<br />
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
