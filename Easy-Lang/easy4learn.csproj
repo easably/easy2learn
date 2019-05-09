@@ -75,6 +75,11 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\libhbrd.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>lib\Microsoft.mshtml.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
@@ -552,6 +557,7 @@
     <Content Include="lib\libEGL.dll" />
     <Content Include="lib\libGLESv2.dll" />
     <Content Include="lib\libhbrd.dll" />
+    <Content Include="lib\Microsoft.mshtml.dll" />
     <Content Include="res\Buttons\DictionaryBlend.png" />
     <Content Include="res\Buttons\estimate.png" />
     <None Include="res\Buttons\green16.png" />

@@ -13,6 +13,11 @@ namespace f
         [STAThread]
         static void Main(string[] args)
         {
+            if (Environment.OSVersion.Version.Major >= 6)
+            {
+                Utils.SetProcessDPIAware();
+            }
+
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

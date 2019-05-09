@@ -12,6 +12,11 @@ namespace f
         [STAThread]
         static void Main(string[] args)
         {
+            if (Environment.OSVersion.Version.Major >= 6)
+            {
+                Utils.SetProcessDPIAware();
+            }
+
             try
             {
                 Application.EnableVisualStyles();

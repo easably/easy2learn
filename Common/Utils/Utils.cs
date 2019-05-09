@@ -238,6 +238,9 @@ namespace f
         }
 
         #region for OS
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern bool SetProcessDPIAware();
+
         public static string GetOSInfo()
         {
             //Get Operating system information.
