@@ -24,8 +24,9 @@ namespace f
 
             tabControl.Selected += new TabControlEventHandler(tabControl1_Selected);
 
-            if(tedBrowser1.IsOfflineMode)
-                this.tabControl.SelectedIndex = this.tabControl.TabPages.IndexOf(this.tpVideoFiles);
+            // TODO: what is this tedBrowser1.IsOfflineMode?
+            // if(tedBrowser1.IsOfflineMode)
+            this.tabControl.SelectedIndex = this.tabControl.TabPages.IndexOf(this.tpVideoFiles);
             AdjustForm();
 
             this.btDownloadfromURL.Click += new System.EventHandler(this.button1_Click);

@@ -20,8 +20,9 @@ namespace f
         public EuronewsArchiveView()
         {
             InitializeComponent();
-            dateTimePicker1.Value = DateTime.Today;
-            dateTimePicker1.MaxDate = DateTime.Today;
+            // TODO: loading news
+            //dateTimePicker1.Value = DateTime.Today;
+            //dateTimePicker1.MaxDate = DateTime.Today;
             css = WebParser.LoadResourceText(@"css.selector-list-euronews-archive.css");
             webBrowser1.Navigating += webBrowser1_Navigating;
             this.Load += EuronewsBrowser_Load;
