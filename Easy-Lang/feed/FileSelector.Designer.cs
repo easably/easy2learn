@@ -404,7 +404,7 @@
             this.lbIntrodaction.Name = "lbIntrodaction";
             this.lbIntrodaction.Size = new System.Drawing.Size(281, 20);
             this.lbIntrodaction.TabIndex = 8;
-            this.lbIntrodaction.Text = "Need only two allFiles video + subtitles.";
+            this.lbIntrodaction.Text = "Specify two files video and subtitles";
             // 
             // tpParents
             // 

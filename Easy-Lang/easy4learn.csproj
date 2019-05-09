@@ -97,6 +97,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="bin\Debug\Sample\Episode\video sample.EN.srt" />
+    <None Include="bin\Debug\Sample\Episode\video sample.EN.srt.lesson" />
+    <None Include="bin\Debug\Sample\Episode\video sample.RU.srt" />
     <None Include="ClassDiagram1.cd" />
     <None Include="feed\TED\ClassDiagramForTed.cd" />
     <None Include="lib\locales\am.pak" />
@@ -532,7 +535,7 @@
     <Content Include="bin\Debug\html\assets\img\tutor.png" />
     <Content Include="bin\Debug\Sample\Episode\Subtitle.RU.txt" />
     <Content Include="bin\Debug\Sample\Episode\Subtitle.EN.txt" />
-    <Content Include="bin\Debug\Sample\Episode\Video.mp4" />
+    <Content Include="bin\Debug\Sample\Episode\video sample.mp4" />
     <Content Include="Easy-Lang.ico" />
     <None Include="Resources\MainIco.png" />
     <None Include="Resources\MainIco16.png" />

@@ -388,19 +388,19 @@ namespace f
         {
             try
             {
-                string _videoFileName = CF.GetValue("VideoFileName", @"\Sample\Episode\Video.avi");
+                string _videoFileName = CF.GetValue("VideoFileName", @"\Sample\Episode\video sample.mp4");
                 if (!Utils.IsURL(_videoFileName))
                     _videoFileName = FileManager.FindPath(_videoFileName, @"Please select a video file");
                 //         _videoFileName = FileManager.FindPathAndReturnFullFileName(_videoFileName, @"\my_video\movie.avi - specify a file with downloaded video");
 
-                string _subtFileName = CF.GetValue("ListEn_FileName", @"\Sample\Episode\Video.EN.srt");
-                _subtFileName = FileManager.FindPath(_subtFileName, @"\my_video\subtitle_for_my_movie.sub - specify a file with downloaded subtitles");
+                string _subtFileName = CF.GetValue("ListEn_FileName", @"\Sample\Episode\video sample.EN.srt");
+                //_subtFileName = FileManager.FindPath(_subtFileName, @"\my_video\subtitle_for_my_movie.sub - specify a file with downloaded subtitles");
                 _subtFileName = FileManager.FindPath(_subtFileName, @"Please select a video file");
 
-                string _lessonFileName = CF.GetValue("Lesson_FileName", CF.GetFolderForUserFiles() + @"\Video.EN.srt.lesson");
+                string _lessonFileName = CF.GetValue("Lesson_FileName", CF.GetFolderForUserFiles() + @"\video sample.EN.srt.lesson");
 
 
-                string _subtNativeFileName = CF.GetValue("ListNative_FileName", @"\Sample\Episode\video.ru.srt");
+                string _subtNativeFileName = CF.GetValue("ListNative_FileName", @"\Sample\Episode\video sample.RU.srt");
 
                 if (string.IsNullOrEmpty(CF.GetValue(CF.installation_date, "")))
                 {
