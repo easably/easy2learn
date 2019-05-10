@@ -429,8 +429,10 @@ namespace f
                             // SuggestVideoFile(this.FileName);
                             //break;
                         }
-                    } 
+                    }
                     #endregion
+                    Type tFoo = typeof(mshtml.BlockFormats); // it's for loading mshtml assembly
+
                     FileSelectorInstance = new FileSelector() { VideoFileName = _videoFileName, SubtitleFileName = _subtFileName, 
                         LessonFileName = _lessonFileName, SubtitleNativeFileName = _subtNativeFileName };
                     if (IsFirstRun)
